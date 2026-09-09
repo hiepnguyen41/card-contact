@@ -26,16 +26,22 @@
     .info { text-align: center; margin: 15px 0 20px; padding: 0 15px; }
     .name { font-size: 20px; font-weight: 700; color: #000; display: flex; align-items: center; justify-content: center; gap: 6px; }
     .verified-icon { width: 20px; height: 20px; background: #00a651; color: #fff; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: bold; }
-    .company { color: #666; font-size: 13px; font-weight: 500; text-transform: uppercase; margin-top: 6px; line-height: 1.4; }
+    
+    /* Kiểu dáng cho Chức danh (Job Title) */
+    .title { color: #004d26; font-size: 14px; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 4px; }
+    
+    .company { color: #666; font-size: 13px; font-weight: 500; text-transform: uppercase; margin-top: 4px; line-height: 1.4; }
     
     .contact-list { display: flex; flex-direction: column; gap: 10px; padding: 0 20px; }
-    .btn-contact { display: flex; align-items: flex-start; background: #f8f9fa; border-radius: 10px; padding: 12px 16px; text-decoration: none; color: #1c1c1e; font-size: 14px; font-weight: 500; transition: background 0.2s; }
-    .btn-contact:active { background: #e5e5ea; }
+    .btn-contact { display: flex; align-items: flex-start; background: #f8f9fa; border-radius: 10px; padding: 12px 16px; text-decoration: none; color: #1c1c1e; font-size: 14px; font-weight: 500; }
     
-    /* Icon xanh lá đậm đồng bộ */
-    .btn-contact .icon { width: 24px; height: 24px; margin-right: 14px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: #004d26; fill: #004d26; }
-    .btn-contact .icon svg { width: 20px; height: 20px; fill: #004d26; }
+    /* Icon xanh dương tươi chuẩn giao diện mẫu */
+    .btn-contact .icon { width: 24px; height: 24px; margin-right: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .btn-contact .icon svg { width: 22px; height: 22px; fill: #007aff; }
     
+    /* Icon Zalo dạng khối vuông bo góc màu xanh đặc trưng */
+    .zalo-icon-box { background-color: #0068ff; width: 22px; height: 22px; border-radius: 5px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 10px; letter-spacing: -0.5px; }
+
     .btn-contact .text { word-break: break-word; line-height: 1.4; }
   </style>
 </head>
@@ -49,19 +55,20 @@
 
     <div class="info">
       <div class="name">NGUYEN LE HOANG HIEP <span class="verified-icon">✓</span></div>
+      <div class="title">MARKETING STAFF</div>
       <div class="company">Bình Minh Home Panel</div>
     </div>
 
     <div class="contact-list">
-      <!-- Mở ứng dụng gọi điện -->
+      <!-- Số điện thoại -->
       <a href="tel:+84932414510" class="btn-contact">
         <span class="icon">
-          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-0.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
         </span> 
         <span class="text">(+84) 932 414 510</span>
       </a>
       
-      <!-- Mở Trang web -->
+      <!-- Website -->
       <a href="https://www.binhminhhome.com" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
@@ -69,20 +76,20 @@
         <span class="text">www.binhminhhome.com</span>
       </a>
       
-      <!-- Mở Google Maps định vị địa chỉ -->
+      <!-- Địa chỉ -->
       <a href="https://maps.google.com/?q=LÔ+SỐ+52-62+ĐƯỜNG+SỐ+1+CỤM+CÔNG+NGHIỆP+CẨM+LỆ+ĐÀ+NẴNG" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 1.12 2.5-2.5 2.5z"/></svg>
         </span> 
         <span class="text">LÔ SỐ 52-62 ĐƯỜNG SỐ 1 THUỘC CỤM CÔNG NGHIỆP CẨM LỆ, PHƯỜNG CẨM LỆ, TP. ĐÀ NẴNG, VN</span>
       </a>
       
-      <!-- Mở trực tiếp ứng dụng Zalo -->
-      <a href="https://zalo.me/0932414510" target="_blank" rel="noopener noreferrer" class="btn-contact">
+      <!-- Zalo -->
+      <a href="https://zalo.me/0919033055" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
-          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
+          <div class="zalo-icon-box">Zalo</div>
         </span> 
-        <span class="text">Zalo: (+84) 932 414 510</span>
+        <span class="text">Zalo: (+84) 919 033 055</span>
       </a>
     </div>
   </div>
