@@ -20,7 +20,6 @@
     .card { background: #fff; width: 100%; max-width: 420px; border-radius: 20px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.05); padding-bottom: 25px; }
     .banner { width: 100%; height: 180px; object-fit: cover; }
     
-    /* Chỉnh kích thước avatar to ra và đổi object-fit thành contain để không bị cắt khuôn mặt */
     .avatar-wrapper { text-align: center; margin-top: -65px; position: relative; }
     .avatar { width: 130px; height: 130px; border-radius: 50%; border: 4px solid #fff; object-fit: contain; background-color: #ffffff; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
     
@@ -30,9 +29,10 @@
     .company { color: #666; font-size: 13px; font-weight: 500; text-transform: uppercase; margin-top: 6px; line-height: 1.4; }
     
     .contact-list { display: flex; flex-direction: column; gap: 10px; padding: 0 20px; }
-    .btn-contact { display: flex; align-items: flex-start; background: #f8f9fa; border-radius: 10px; padding: 12px 16px; text-decoration: none; color: #1c1c1e; font-size: 14px; font-weight: 500; }
+    .btn-contact { display: flex; align-items: flex-start; background: #f8f9fa; border-radius: 10px; padding: 12px 16px; text-decoration: none; color: #1c1c1e; font-size: 14px; font-weight: 500; transition: background 0.2s; }
+    .btn-contact:active { background: #e5e5ea; }
     
-    /* Đồng bộ icon cùng 1 màu xanh lá đậm chuyên nghiệp (#004d26) */
+    /* Icon xanh lá đậm đồng bộ */
     .btn-contact .icon { width: 24px; height: 24px; margin-right: 14px; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; color: #004d26; fill: #004d26; }
     .btn-contact .icon svg { width: 20px; height: 20px; fill: #004d26; }
     
@@ -53,7 +53,7 @@
     </div>
 
     <div class="contact-list">
-      <!-- Số điện thoại -->
+      <!-- Mở ứng dụng gọi điện -->
       <a href="tel:+84932414510" class="btn-contact">
         <span class="icon">
           <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
@@ -61,28 +61,28 @@
         <span class="text">(+84) 932 414 510</span>
       </a>
       
-      <!-- Website -->
-      <a href="https://www.binhminhhomepanel.com" target="_blank" class="btn-contact">
+      <!-- Mở Trang web -->
+      <a href="https://www.binhminhhomepanel.com" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
           <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
         </span> 
         <span class="text">www.binhminhhomepanel.com</span>
       </a>
       
-      <!-- Địa chỉ -->
-      <a href="https://maps.google.com/?q=LÔ+SỐ+52-62+ĐƯỜNG+SỐ+1+CỤM+CÔNG+NGHIỆP+CẨM+LỆ+ĐÀ+NẴNG" target="_blank" class="btn-contact">
+      <!-- Mở Google Maps định vị địa chỉ -->
+      <a href="https://maps.google.com/?q=LÔ+SỐ+52-62+ĐƯỜNG+SỐ+1+CỤM+CÔNG+NGHIỆP+CẨM+LỆ+ĐÀ+NẴNG" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
           <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
         </span> 
         <span class="text">LÔ SỐ 52-62 ĐƯỜNG SỐ 1 THUỘC CỤM CÔNG NGHIỆP CẨM LỆ, PHƯỜNG CẨM LỆ, TP. ĐÀ NẴNG, VN</span>
       </a>
       
-      <!-- Zalo -->
-      <a href="https://zalo.me/0919033055" target="_blank" class="btn-contact">
+      <!-- Mở trực tiếp ứng dụng Zalo -->
+      <a href="https://zalo.me/0932414510" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
           <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z"/></svg>
         </span> 
-        <span class="text">Zalo: (+84) 919 033 055</span>
+        <span class="text">Zalo: (+84) 932 414 510</span>
       </a>
     </div>
   </div>
