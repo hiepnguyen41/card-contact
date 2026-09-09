@@ -33,7 +33,7 @@
     .contact-list { display: flex; flex-direction: column; gap: 10px; padding: 0 20px; }
     .btn-contact { display: flex; align-items: flex-start; background: #f8f9fa; border-radius: 10px; padding: 12px 16px; text-decoration: none; color: #1c1c1e; font-size: 14px; font-weight: 500; }
     
-    /* Thiết lập icon SVG chuẩn màu xanh dương (#0d82fe) chuẩn 100% hình mẫu */
+    /* Thiết lập icon SVG màu xanh dương (#0d82fe) */
     .btn-contact .icon { width: 24px; height: 24px; margin-right: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
     .btn-contact .icon svg { width: 22px; height: 22px; }
 
@@ -74,18 +74,32 @@
       <!-- Location Pin Icon y hệt hình 4 -->
       <a href="https://maps.google.com/?q=LÔ+SỐ+52-62+ĐƯỜNG+SỐ+1+CỤM+CÔNG+NGHIỆP+CẨM+LỆ+ĐÀ+NẴNG" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
-          <svg viewBox="0 0 24 24" fill="#0d82fe"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+          <svg viewBox="0 0 24 24" fill="#0d82fe"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5-2.5z"/></svg>
         </span> 
         <span class="text">LÔ SỐ 52-62 ĐƯỜNG SỐ 1 THUỘC CỤM CÔNG NGHIỆP CẨM LỆ, PHƯỜNG CẨM LỆ, TP. ĐÀ NẴNG, VN</span>
       </a>
       
-      <!-- Zalo App Logo chuẩn mẫu ảnh -->
+      <!-- Zalo App Logo vẽ chuẩn 100% theo mẫu ảnh cung cấp -->
       <a href="https://zalo.me/0932414510" target="_blank" rel="noopener noreferrer" class="btn-contact">
         <span class="icon">
-          <svg viewBox="0 0 24 24">
-            <rect width="24" height="24" rx="5" fill="#0068ff"/>
-            <path d="M18 4H6C4.9 4 4 4.9 4 6v9c0 1.1.9 2 2 2h2l3 3 3-3h4c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2z" fill="#ffffff"/>
-            <text x="12" y="13.5" font-size="7.5" font-weight="bold" fill="#0068ff" text-anchor="middle" font-family="Arial, sans-serif">Zalo</text>
+          <svg viewBox="0 0 100 100" style="border-radius: 20%; overflow: hidden;">
+            <!-- Khung nền vuông màu xanh -->
+            <rect width="100" height="100" fill="#006aff"/>
+            <!-- Bóng đổ đuôi cuộc trò chuyện -->
+            <path d="M 15.6 82.2 L 32.5 98 L 100 30.5 L 100 0 Z" fill="#0055cb" opacity="0.4"/>
+            <!-- Bong bóng trò chuyện màu trắng -->
+            <path d="M 28.5 0 C 72 0 100 28 100 70.5 C 100 100 70.5 100 50 88.5 C 38 88.5 29.5 82.2 15.6 82.2 C 15.6 82.2 19.5 76 19.5 70 C 9.5 59.5 0 45 0 28.5 C 0 12.8 12.8 0 28.5 0 Z" fill="#ffffff"/>
+            <!-- Chữ Zalo chính xác -->
+            <g fill="#006aff">
+              <!-- Z -->
+              <path d="M 23 33 H 43 V 37.5 L 29.5 52.5 H 43 V 57 H 23 V 52.5 L 36.5 37.5 H 23 Z"/>
+              <!-- a -->
+              <path d="M 52.5 42.5 C 48 42.5 44.5 45.5 44.5 50 C 44.5 54.5 48 57.5 52.5 57.5 C 55.2 57.5 57.5 56.2 58.8 54.2 V 57 H 62.8 V 43 H 58.8 V 45.8 C 57.5 43.8 55.2 42.5 52.5 42.5 Z M 53.8 46.2 C 56.5 46.2 58.8 48 58.8 50 C 58.8 52 56.5 53.8 53.8 53.8 C 51 53.8 48.8 52 48.8 50 C 48.8 48 51 46.2 53.8 46.2 Z"/>
+              <!-- l -->
+              <path d="M 66 32.5 H 70.2 V 57 H 66 Z"/>
+              <!-- o -->
+              <path d="M 82.5 42.5 C 77.2 42.5 73 45.8 73 50 C 73 54.2 77.2 57.5 82.5 57.5 C 87.8 57.5 92 54.2 92 50 C 92 45.8 87.8 42.5 82.5 42.5 Z M 82.5 46.2 C 85.5 46.2 87.8 47.8 87.8 50 C 87.8 52.2 85.5 53.8 82.5 53.8 C 79.5 53.8 77.2 52.2 77.2 50 C 77.2 47.8 79.5 46.2 82.5 46.2 Z"/>
+            </g>
           </svg>
         </span> 
         <span class="text">Zalo: (+84) 932 414 510</span>
